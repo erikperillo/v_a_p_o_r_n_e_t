@@ -1,0 +1,3 @@
+*.pkl
+*.swp
+__pycache__/
