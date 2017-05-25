@@ -87,7 +87,7 @@ def populate_output_dir(out_dir):
 def main():
     #theano variables for inputs and targets
     input_var = T.tensor4("inputs", dtype="floatX")
-    target_var = T.ivector("targets")
+    target_var = T.tensor4("targets", dtype="floatX")
 
     out_dir = mk_output_dir(cfg.output_dir_basedir)
     print("created output dir '%s'..." % out_dir)
